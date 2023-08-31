@@ -12,7 +12,18 @@
 		025D6EDA2A9DD3C700EF559D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D6ED92A9DD3C700EF559D /* ContentView.swift */; };
 		025D6EDC2A9DD3C800EF559D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025D6EDB2A9DD3C800EF559D /* Assets.xcassets */; };
 		025D6EDF2A9DD3C800EF559D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025D6EDE2A9DD3C800EF559D /* Preview Assets.xcassets */; };
+		026343D92AA1046200EDA59F /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026343D82AA1046200EDA59F /* BullseyeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		026343DA2AA1046200EDA59F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025D6ECC2A9DD3C700EF559D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025D6ED32A9DD3C700EF559D;
+			remoteInfo = Bullseye;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		025A291B2AA0A6450080E2C2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -21,10 +32,19 @@
 		025D6ED92A9DD3C700EF559D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		025D6EDB2A9DD3C800EF559D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		025D6EDE2A9DD3C800EF559D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		026343D62AA1046200EDA59F /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026343D82AA1046200EDA59F /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		025D6ED12A9DD3C700EF559D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026343D32AA1046200EDA59F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				025D6ED62A9DD3C700EF559D /* Bullseye */,
+				026343D72AA1046200EDA59F /* BullseyeTests */,
 				025D6ED52A9DD3C700EF559D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				025D6ED42A9DD3C700EF559D /* Bullseye.app */,
+				026343D62AA1046200EDA59F /* BullseyeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +116,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		026343D72AA1046200EDA59F /* BullseyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				026343D82AA1046200EDA59F /* BullseyeTests.swift */,
+			);
+			path = BullseyeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +144,24 @@
 			productReference = 025D6ED42A9DD3C700EF559D /* Bullseye.app */;
 			productType = "com.apple.product-type.application";
 		};
+		026343D52AA1046200EDA59F /* BullseyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026343DE2AA1046200EDA59F /* Build configuration list for PBXNativeTarget "BullseyeTests" */;
+			buildPhases = (
+				026343D22AA1046200EDA59F /* Sources */,
+				026343D32AA1046200EDA59F /* Frameworks */,
+				026343D42AA1046200EDA59F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				026343DB2AA1046200EDA59F /* PBXTargetDependency */,
+			);
+			name = BullseyeTests;
+			productName = BullseyeTests;
+			productReference = 026343D62AA1046200EDA59F /* BullseyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +174,10 @@
 				TargetAttributes = {
 					025D6ED32A9DD3C700EF559D = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					026343D52AA1046200EDA59F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 025D6ED32A9DD3C700EF559D;
 					};
 				};
 			};
@@ -143,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				025D6ED32A9DD3C700EF559D /* Bullseye */,
+				026343D52AA1046200EDA59F /* BullseyeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +207,13 @@
 			files = (
 				025D6EDF2A9DD3C800EF559D /* Preview Assets.xcassets in Resources */,
 				025D6EDC2A9DD3C800EF559D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026343D42AA1046200EDA59F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +230,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		026343D22AA1046200EDA59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026343D92AA1046200EDA59F /* BullseyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		026343DB2AA1046200EDA59F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025D6ED32A9DD3C700EF559D /* Bullseye */;
+			targetProxy = 026343DA2AA1046200EDA59F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		025D6EE02A9DD3C800EF559D /* Debug */ = {
@@ -345,6 +421,50 @@
 			};
 			name = Release;
 		};
+		026343DC2AA1046200EDA59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R6X2J74TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkanozturk.BullseyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bullseye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bullseye";
+			};
+			name = Debug;
+		};
+		026343DD2AA1046200EDA59F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R6X2J74TY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkanozturk.BullseyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bullseye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bullseye";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -362,6 +482,15 @@
 			buildConfigurations = (
 				025D6EE32A9DD3C800EF559D /* Debug */,
 				025D6EE42A9DD3C800EF559D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026343DE2AA1046200EDA59F /* Build configuration list for PBXNativeTarget "BullseyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026343DC2AA1046200EDA59F /* Debug */,
+				026343DD2AA1046200EDA59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
